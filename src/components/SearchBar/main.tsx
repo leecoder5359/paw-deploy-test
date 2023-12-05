@@ -1,7 +1,5 @@
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import { FaSearch } from 'react-icons/fa'
-import {saveSubscription} from "@/utils/db";
 
 export const MainSearchBar = ({ userName }: { userName?: string | null }) => {
   return (
@@ -14,9 +12,7 @@ export const MainSearchBar = ({ userName }: { userName?: string | null }) => {
         <span className="ml-4 truncate">
           {userName ? `${userName}님, 맥도날드 어때요?` : '검색해보세요'}
         </span>
-
       </Link>
     </div>
   )
 }
-
