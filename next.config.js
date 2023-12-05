@@ -7,6 +7,9 @@ const config = {
 
 const nextConfig = withPWA({
   dest: "public",
+  register: true,
+  skipWaiting: true,
+  customWorkerDir: 'worker',
   runtimeCaching: [],
 })(config);
 
